@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Hub | Engineering Office</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Knowledge Hub</div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#tools">Tools</a>
+      <a href="#docs">Docs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="toggle" id="themeToggle" aria-label="Toggle theme">🌞</button>
+      <button class="toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <p class="eyebrow">Engineering Office</p>
+        <h1>Knowledge Hub</h1>
+        <p class="lead">Centralized tools, documents, and insights to ship better products together.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#tools">Explore Tools</a>
+          <a class="btn ghost" href="#docs">Read Docs</a>
+        </div>
+        <div class="quick-links" aria-label="Quick links">
+          <a href="#tools" class="pill">Calculators</a>
+          <a href="#docs" class="pill">Design Guides</a>
+          <a href="#about" class="pill">Team</a>
+          <a href="#contact" class="pill">Support</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="stat">
+          <span class="stat-value">40+</span>
+          <span class="stat-label">Engineering tools</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">Knowledge access</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">12</span>
+          <span class="stat-label">Active initiatives</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section tools">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Tools</p>
+          <h2>Find the right tool fast</h2>
+          <p class="muted">Search and filter across calculators, checklists, and dashboards.</p>
+        </div>
+        <div class="filters">
+          <label class="sr-only" for="toolSearch">Search tools</label>
+          <input id="toolSearch" type="search" placeholder="Search tools" />
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="all">All categories</option>
+            <option value="design">Design</option>
+            <option value="analysis">Analysis</option>
+            <option value="quality">Quality</option>
+            <option value="ops">Operations</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="toolGrid" role="list">
+        <article class="card" data-category="design" role="listitem">
+          <h3>Load Calculator</h3>
+          <p>Estimate beam loads with configurable factors of safety.</p>
+          <div class="tags"><span>Design</span><span>Calculator</span></div>
+        </article>
+        <article class="card" data-category="analysis" role="listitem">
+          <h3>Stress Analyzer</h3>
+          <p>Visualize stress distribution across critical components.</p>
+          <div class="tags"><span>Analysis</span><span>Simulation</span></div>
+        </article>
+        <article class="card" data-category="quality" role="listitem">
+          <h3>Inspection Checklist</h3>
+          <p>Standardized QA steps to keep builds compliant.</p>
+          <div class="tags"><span>Quality</span><span>Process</span></div>
+        </article>
+        <article class="card" data-category="ops" role="listitem">
+          <h3>Throughput Dashboard</h3>
+          <p>Monitor line performance and spot bottlenecks early.</p>
+          <div class="tags"><span>Operations</span><span>Dashboard</span></div>
+        </article>
+        <article class="card" data-category="design" role="listitem">
+          <h3>Material Selector</h3>
+          <p>Compare materials by strength, weight, and availability.</p>
+          <div class="tags"><span>Design</span><span>Reference</span></div>
+        </article>
+        <article class="card" data-category="analysis" role="listitem">
+          <h3>Failure Mode Matrix</h3>
+          <p>Prioritize risks with severity, occurrence, and detection scoring.</p>
+          <div class="tags"><span>Analysis</span><span>FMEA</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="docs" class="section docs">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Documentation</p>
+          <h2>Curated by discipline</h2>
+          <p class="muted">Browse the latest standards, checklists, and reference guides.</p>
+        </div>
+      </div>
+      <div class="grid docs-grid">
+        <article class="card">
+          <h3>Design Standards</h3>
+          <ul>
+            <li>CAD templates and revision rules</li>
+            <li>Dimensioning best practices</li>
+            <li>Tolerancing playbook</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Analysis Library</h3>
+          <ul>
+            <li>Finite element guidelines</li>
+            <li>Thermal modeling tips</li>
+            <li>Verification checklists</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Quality & Safety</h3>
+          <ul>
+            <li>Inspection SOPs</li>
+            <li>Safety sign-offs</li>
+            <li>Non-conformance flows</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Operations & Release</h3>
+          <ul>
+            <li>Build readiness checklist</li>
+            <li>Change control guide</li>
+            <li>Supplier handoff notes</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-content">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>The office behind the work</h2>
+          <p class="muted">We empower teams with ready-to-ship guidance, vetted tools, and responsive support.</p>
+          <div class="pill-group">
+            <span class="pill">Systems thinking</span>
+            <span class="pill">Cross-functional</span>
+            <span class="pill">Rapid delivery</span>
+          </div>
+        </div>
+        <div class="info-cards">
+          <article class="mini-card">
+            <h3>Enablement</h3>
+            <p>On-call experts to unblock design, analysis, and build steps.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Governance</h3>
+            <p>Lightweight standards that raise quality without slowing teams down.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Improvement</h3>
+            <p>Feedback loops that turn lessons learned into better playbooks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let us know what you need</h2>
+          <p class="muted">Drop a request and we will respond within one business day.</p>
+        </div>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <label>
+            Name
+            <input type="text" name="name" required />
+            <span class="error" data-error-for="name"></span>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+            <span class="error" data-error-for="email"></span>
+          </label>
+        </div>
+        <label>
+          Topic
+          <select name="topic" required>
+            <option value="">Select one</option>
+            <option>Tool request</option>
+            <option>Doc update</option>
+            <option>Training</option>
+            <option>Other</option>
+          </select>
+          <span class="error" data-error-for="topic"></span>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" minlength="10" required></textarea>
+          <span class="error" data-error-for="message"></span>
+        </label>
+        <button type="submit" class="btn primary">Send message</button>
+        <p class="form-success" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for the Engineering Office • Knowledge Hub</p>
+    <div class="footer-links">
+      <a href="#home">Back to top</a>
+      <a href="#tools">Tools</a>
+      <a href="#docs">Docs</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
